@@ -1,11 +1,7 @@
 package com.example.ofirv.dungeoneercompanionapp;
 
-import android.annotation.SuppressLint;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,7 +14,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.character_sheet);
 
         levelText = findViewById(R.id.level);
         healthText = findViewById(R.id.health);
