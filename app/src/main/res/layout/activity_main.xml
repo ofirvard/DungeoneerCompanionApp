@@ -1,10 +1,20 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@drawable/tavern"
-              android:baselineAligned="false"
-              tools:context="com.example.ofirv.dungeoneercompanionapp.MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tavern"
+    android:keepScreenOn="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0sp"
@@ -13,27 +23,162 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/glory_plus_ten"
+            android:id="@+id/glory_plus_10"
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:background="#55555555"
+            style="@style/style1"
             android:text="@string/plus_ten" />
 
         <Button
-            android:id="@+id/glory_plus_five"
+            android:id="@+id/glory_plus_5"
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:background="#55555555"
+            style="@style/style1"
             android:text="@string/plus_five" />
 
         <Button
-            android:id="@+id/glory_plus_one"
+            android:id="@+id/glory_plus_1"
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:background="#55555555"
+            style="@style/style1"
             android:text="@string/plus_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/glory" />
+
+            <TextView
+                android:id="@+id/glory"
+                style="@style/style1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/glory_minus_1"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/minus_one" />
+
+        <Button
+            android:id="@+id/glory_minus_5"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/minus_five" />
+
+        <Button
+            android:id="@+id/glory_minus_10"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/minus_ten" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/peril_plus_10"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/plus_ten" />
+
+        <Button
+            android:id="@+id/peril_plus_5"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/plus_five" />
+
+        <Button
+            android:id="@+id/peril_plus_1"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/plus_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/peril" />
+
+            <TextView
+                android:id="@+id/peril"
+                style="@style/style1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/peril_minus_1"
+            style="@style/style1"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:text="@string/minus_one" />
+
+        <Button
+            android:id="@+id/peril_minus_5"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/minus_five" />
+
+        <Button
+            android:id="@+id/peril_minus_10"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            style="@style/style1"
+            android:text="@string/minus_ten" />
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/peril_plus_ten"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:background="@color/grey"-->
+    <!--android:text="@string/plus_ten"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
 </LinearLayout>
