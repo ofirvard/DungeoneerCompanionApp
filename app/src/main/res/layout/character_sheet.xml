@@ -7,9 +7,247 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/wood" />
+        android:src="@drawable/wood"/>
 
-    <include layout="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:orientation="vertical">
 
-    </include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/level_minus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/minus_one"/>
+
+            <TextView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/level"/>
+
+            <TextView
+                android:id="@+id/level"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/level_plus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/plus_one"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/health_minus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/health"/>
+
+            <TextView
+                android:id="@+id/health"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/health_plus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/plus_one"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/strength_minus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/strength"/>
+
+            <TextView
+                android:id="@+id/strength"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/strength_plus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/plus_one"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/magic_minus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/magic"/>
+
+            <TextView
+                android:id="@+id/magic"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/magic_plus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/plus_one"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/action_minus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/action"/>
+
+            <TextView
+                android:id="@+id/action"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/action_plus_one"
+                style="@style/style1"
+                android:layout_weight="2"
+                android:text="@string/plus_one"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/glory_minus_five"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/minus_five"/>
+
+            <Button
+                android:id="@+id/glory_minus_one"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/glory"/>
+
+            <TextView
+                android:id="@+id/glory"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/glory_plus_one"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/plus_one"/>
+
+            <Button
+                android:id="@+id/glory_plus_five"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/plus_five"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/peril_minus_five"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/minus_five"/>
+
+            <Button
+                android:id="@+id/peril_minus_one"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/minus_one"/>
+
+            <ImageView
+                style="@style/style1"
+                android:layout_weight="1"
+                android:src="@drawable/peril"/>
+
+            <TextView
+                android:id="@+id/peril"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/peril_plus_one"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/plus_one"/>
+
+            <Button
+                android:id="@+id/peril_plus_five"
+                style="@style/style1"
+                android:layout_weight="1"
+                android:text="@string/plus_five"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </FrameLayout>
