@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity
 
         levelText = findViewById(R.id.level);
         healthText = findViewById(R.id.health);
-        strengthText = findViewById(R.id.strength);
-        magicText = findViewById(R.id.magic);
-        actionText = findViewById(R.id.action);
         gloryText = findViewById(R.id.glory);
         perilText = findViewById(R.id.peril);
     }
